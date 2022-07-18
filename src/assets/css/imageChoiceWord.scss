@@ -1,0 +1,85 @@
+
+.category-box{
+  width: 30%;
+  float: left;
+}
+
+.subject-box{
+  width: 69%;
+  float: left;
+}
+
+
+.choice-subject-options {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 2rem;
+  margin-left: 5rem;
+}
+
+
+.subject-option {
+  //position: relative;
+  font-size: 24px;
+  width: 100%;
+  display: grid;
+}
+
+.option-info {
+  width: 100%;
+  display: flex;
+}
+
+.choice-result {
+  float: left !important;
+  margin-top: 0 !important;
+  margin-right: 0 !important;
+}
+
+.option-content {
+  float: left;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+}
+
+
+
+.subject-answer {
+  padding: 16px;
+}
+
+.subject-buttons {
+  display: block;
+  //margin-left: 3rem;
+}
+
+
+@media(max-width: 1160px) {
+  .subject-box {
+    width: 94% !important;
+    float: left !important;
+    text-align: left !important;
+    margin-top: 1rem !important;
+  }
+
+  .subject-title{
+    font-size: 1rem !important;
+  }
+
+  .subject-options > li .subject-option-prefix{
+    display: inline !important;
+    font-size: 0.9rem !important;
+  }
+
+  .subject-options > li label{
+    padding: 0px 10px 0px 45px !important;
+  }
+
+  .subject-buttons{
+    margin-top: 0em !important;
+    text-align: center !important;
+    margin-top: 2rem !important;
+  }
+
+}

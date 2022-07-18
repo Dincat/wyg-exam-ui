@@ -1,0 +1,76 @@
+{
+  "name": "worilessgo-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build:prod": "vue-cli-service build",
+    "build:stage": "vue-cli-service build --mode staging",
+    "preview": "node build/index.js --preview",
+    "lint": "eslint --ext .js,.vue src"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "crypto-js": "^4.1.1",
+    "element-ui": "^2.15.3",
+    "file-saver": "2.0.5",
+    "js-cookie": "^3.0.1",
+    "jsencrypt": "^3.2.1",
+    "json-bigint": "^1.0.0",
+    "less-loader": "^6.0.0",
+    "moment": "^2.29.1",
+    "nprogress": "^0.2.0",
+    "register-service-worker": "^1.7.1",
+    "swiper": "^3.4.2",
+    "vue": "^2.6.11",
+    "vue-ba": "^1.2.8",
+    "vue-count-to": "^1.0.13",
+    "vue-fixed-header": "^3.2.15",
+    "vue-i18n": "^8.27.1",
+    "vue-router": "^3.2.0",
+    "vue-superslide": "^0.1.1",
+    "vue2-countdown": "^1.0.8",
+    "vuex": "^3.6.0",
+    "weixin-js-sdk": "1.6.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-pwa": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "jquery": "^3.6.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "stylus": "^0.54.8",
+    "stylus-loader": "^3.0.2",
+    "vue-loader": "^16.8.3",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.44.2",
+    "wowjs": "^1.1.3"
+  },
+  "rules": {
+    "generator-star-spacing": "off",
+    "no-tabs": "off",
+    "no-unused-vars": "off",
+    "no-console": "off",
+    "no-irregular-whitespace": "off",
+    "no-debugger": "off"
+  }
+}

@@ -1,0 +1,131 @@
+
+.category-box{
+  width: 30%;
+  float: left;
+}
+
+.subject-box{
+  width: 69%;
+  float: left;
+  text-align: center;
+}
+
+.image-box{
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.answer-box{
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+
+.answer-item{
+  border: 1px solid #222;
+  margin: 0 auto;
+
+}
+
+.el-checkbox-group label span{
+  min-height: 36px !important;
+  min-width: 56px !important;
+}
+
+.subject-options {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+
+
+.subject-option {
+  //position: relative;
+  font-size: 24px;
+  width: 100%;
+  display: grid;
+}
+
+.option-info {
+  width: 100%;
+  display: flex;
+}
+
+.result {
+  float: right;
+  margin-top: -2rem;
+  margin-right: 10rem;
+  margin-bottom: 1rem;
+}
+
+.el-checkbox-group{
+  margin-bottom: 1rem;
+}
+
+.option-content {
+  float: left;
+}
+
+
+.toggle {
+  opacity: 0;
+  text-align: center;
+  width: 35px;
+  /* auto, since non-WebKit browsers doesn't support input styling */
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  border: none;
+  /* Mobile Safari */
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.toggle + label {
+  background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23ededed%22%20stroke-width%3D%223%22/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 30px;
+}
+
+.toggle:checked + label {
+  background-size: 30px;
+  background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23bddad5%22%20stroke-width%3D%223%22/%3E%3Cpath%20fill%3D%22%235dc2af%22%20d%3D%22M72%2025L42%2071%2027%2056l-4%204%2020%2020%2034-52z%22/%3E%3C/svg%3E');
+}
+
+.option-content label {
+  word-break: break-all;
+  padding: 10px 10px 10px 45px;
+  display: block;
+  line-height: 1.0;
+  transition: color 0.4s;
+}
+
+/* 选项名称 */
+.subject-option-prefix {
+  vertical-align: text-top;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 1.5rem;
+}
+
+.subject-option-prefix img {
+  max-width: 10rem !important;
+}
+
+.subject-answer {
+  padding: 16px;
+}
+
+.subject-buttons {
+  display: block;
+  //margin-left: 3rem;
+  margin-top: 2rem;
+}
